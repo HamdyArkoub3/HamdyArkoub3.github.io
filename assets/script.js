@@ -1,13 +1,11 @@
-const toggle = document.querySelector('.menu-toggle');
-const links = document.querySelector('.nav-links');
-const year = document.querySelector('#year');
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
 
-year.textContent = new Date().getFullYear();
-
-toggle.addEventListener('click', () => {
-  links.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => links.classList.remove('open'));
-});
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+}

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -27,151 +27,183 @@
     </nav>
   </header>
 
-  
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-content">
-        <p class="eyebrow">Computational Nuclear Materials · Molten Salt Corrosion · Multiscale Modeling</p>
-        <h1>Hamdy Arkoub</h1>
-        <h2>Computational Nuclear Materials Researcher</h2>
-        <p class="hero-text">
-          I am a computational nuclear materials researcher with a Ph.D. in Nuclear Engineering from Penn State  with a doctoral minor in Computational Materials. My research focuses on multiscale modeling for advanced nuclear energy systems. I use density functional theory, reactive molecular dynamics, and kinetic Monte Carlo methods and more to understand materials behavior in extreme environments. I have a huge passion towards the history of Egypt, and a framework to connect its vast history together in one "multiscale" picture!
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#research">Explore Research</a>
-          <a class="button secondary" href="#history">History & Civilizations</a>
-          <a class="button secondary" href="Hamdy_Arkoub_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+  <main id="home" class="layout">
+    <aside class="profile-panel">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Hamdy Arkoub" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="photo-fallback">HA</div>
+      </div>
+
+      <h1>Hamdy<br>Arkoub</h1>
+      <p class="pronouns">Computational Nuclear Materials</p>
+      <h2>Researcher</h2>
+      <p class="affiliation">Penn State Nuclear Engineering</p>
+
+      <div class="social-links" aria-label="Profile links">
+        <a href="mailto:hamdy.arkoub@gmail.com" title="Email">@</a>
+        <a href="https://github.com/HamdyArkoub3" target="_blank" rel="noopener" title="GitHub">GH</a>
+        <a href="https://scholar.google.com/citations?user=6HetfTYAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">GS</a>
+        <a href="https://orcid.org/0000-0002-3512-9491" target="_blank" rel="noopener" title="ORCID">iD</a>
+        <a href="https://www.linkedin.com/in/hamdyarkoub3/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      </div>
+    </aside>
+
+    <section class="content-panel">
+      <section id="about" class="section intro-section">
+        <div class="section-heading">
+          <span class="icon">▣</span>
+          <h2>Professional Summary</h2>
         </div>
-      </div>
-      <aside class="hero-card">
-        <div class="portrait-placeholder">HA</div>
-        <h3>Research focus</h3>
-        <p>Molten salt corrosion, Ni–Cr alloys, atomistic simulation, ReaxFF MD, DFT, and multiscale modeling for advanced nuclear energy systems.</p>
-      </aside>
-    </section>
+        <p class="lead">
+          I am a computational nuclear materials researcher with a Ph.D. in Nuclear Engineering from Penn State and a doctoral minor in Computational Materials. My research focuses on molten salt corrosion, Ni–Cr alloys, and multiscale modeling for advanced nuclear energy systems.
+        </p>
+        <p>
+          I use density functional theory, reactive molecular dynamics, and kinetic Monte Carlo methods to connect atomic-scale degradation mechanisms with longer-term materials behavior in extreme environments. Beyond research, I am deeply interested in the history of Egypt and the ancient world, and in understanding civilizations as complex systems shaped by technology, environment, crisis, and resilience.
+        </p>
+        <div class="action-row">
+          <a class="button primary" href="Hamdy_Arkoub_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="button secondary" href="#research">Explore Research</a>
+        </div>
+      </section>
 
-    <section id="about" class="section narrow">
-      <p class="eyebrow">About</p>
-      <h2>Studying materials degradation from atoms to engineering scales.</h2>
-      <p>
-        I am a nuclear engineer and computational materials researcher working at the intersection of atomistic simulation, molten salt corrosion, and advanced nuclear energy systems. My PhD research at Penn State focused on understanding corrosion mechanisms in Ni–Cr alloys exposed to molten fluoride salts using DFT, reactive molecular dynamics, and kinetic Monte Carlo modeling.
-      </p>
-      <p>
-        My broader goal is to build multiscale modeling frameworks that connect atomic-scale mechanisms to engineering-scale predictions for materials in extreme environments, including advanced fission and fusion systems.
-      </p>
-      <p>
-        Outside my technical work, I have a strong passion for history, especially ancient Egypt, the Bronze Age, and the ways civilizations responded to crisis, technology, climate, and conflict. I see history as another way of studying complex systems — human ones.
-      </p>
-    </section>
+      <section class="section news-section">
+        <div class="section-heading">
+          <span class="icon">✦</span>
+          <h2>Recent Updates</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <strong>June 2026</strong>
+            <p>Passed Ph.D. defense in Nuclear Engineering at Penn State.</p>
+          </article>
+          <article>
+            <strong>2026</strong>
+            <p>Published first-author work in <em>Corrosion Science</em> on chemically ordered NiCr alloys in molten salts.</p>
+          </article>
+          <article>
+            <strong>August 2026</strong>
+            <p>Beginning postdoctoral research at Idaho National Laboratory.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="research" class="section">
-      <p class="eyebrow">Research</p>
-      <h2>Research themes</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Molten Salt Corrosion</h3>
-          <p>Reactive molecular dynamics and first-principles modeling of Ni–Cr alloy corrosion in molten fluoride salts relevant to advanced nuclear reactors.</p>
-        </article>
-        <article class="card">
-          <h3>Chemical Ordering & Alloy Degradation</h3>
-          <p>Understanding how long-range and short-range chemical ordering influence Cr transport, percolating corrosion pathways, and surface degradation.</p>
-        </article>
-        <article class="card">
-          <h3>Surfaces, Grain Boundaries & Stress</h3>
-          <p>Atomic-scale mechanisms of fluorine adsorption, Cr dissolution, grain-boundary effects, surface orientation dependence, and stress-assisted corrosion.</p>
-        </article>
-        <article class="card">
-          <h3>Multiscale Modeling</h3>
-          <p>Connecting DFT, ReaxFF MD, kinetic Monte Carlo, and future engineering-scale models to predict long-term materials behavior in extreme environments.</p>
-        </article>
-      </div>
-    </section>
+      <section id="research" class="section">
+        <div class="section-heading">
+          <span class="icon">⌬</span>
+          <h2>Research Themes</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon">01</span>
+            <h3>Molten Salt Corrosion</h3>
+            <p>Reactive molecular dynamics and first-principles modeling of Ni–Cr alloy corrosion in molten fluoride salts relevant to advanced nuclear reactors.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">02</span>
+            <h3>Chemical Ordering & Alloy Degradation</h3>
+            <p>Understanding how long-range and short-range chemical ordering influence Cr transport, percolating corrosion pathways, and surface degradation.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">03</span>
+            <h3>Surfaces, Grain Boundaries & Stress</h3>
+            <p>Atomic-scale mechanisms of fluorine adsorption, Cr dissolution, grain-boundary effects, surface orientation dependence, and stress-assisted corrosion.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">04</span>
+            <h3>Multiscale Modeling</h3>
+            <p>Connecting DFT, ReaxFF MD, kinetic Monte Carlo, and engineering-scale models to predict materials behavior in extreme environments.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="publications" class="section">
-      <p class="eyebrow">Selected publications</p>
-      <h2>Recent first-author work</h2>
-      <div class="publication-list">
-        <article class="publication">
-          <h3>Percolating Corrosion Pathways of Chemically Ordered NiCr Alloys in Molten Salts</h3>
-          <p><strong>Corrosion Science</strong>, 2026</p>
-          <p>Shows how chemical ordering can create connected Cr pathways that accelerate molten salt corrosion in Ni–Cr alloys.</p>
-          <a href="https://doi.org/10.1016/j.corsci.2026.113960" target="_blank" rel="noopener">DOI</a>
-        </article>
-        <article class="publication">
-          <h3>Surface Orientation-Dependent Corrosion of NiCr in Molten FLiNaK Salt</h3>
-          <p><strong>ACS Applied Materials & Interfaces</strong>, 2025</p>
-          <p>Reveals how surface orientation and applied electric fields control fluorine coverage and Cr dissolution.</p>
-          <a href="https://doi.org/10.1021/acsami.5c06557" target="_blank" rel="noopener">DOI</a>
-        </article>
-        <article class="publication">
-          <h3>First-Principles Grain Boundary Effects on Fluorine-Induced Initial Corrosion of NiCr</h3>
-          <p><strong>Computational Materials Science</strong>, 2025</p>
-          <p>Explains how grain boundaries enhance fluorine adsorption and lower dissolution barriers relative to terrace sites.</p>
-          <a href="https://doi.org/10.1016/j.commatsci.2025.113903" target="_blank" rel="noopener">DOI</a>
-        </article>
-        <article class="publication">
-          <h3>A Reactive Force Field Approach to Modeling Corrosion of NiCr Alloys in Molten FLiNaK Salts</h3>
-          <p><strong>Applied Surface Science</strong>, 2024</p>
-          <p>Develops and applies a ReaxFF framework for atomistic molten salt corrosion simulations of Ni–Cr alloys.</p>
-          <a href="https://doi.org/10.1016/j.apsusc.2024.159627" target="_blank" rel="noopener">DOI</a>
-        </article>
-      </div>
-    </section>
+      <section id="publications" class="section">
+        <div class="section-heading">
+          <span class="icon">▤</span>
+          <h2>Selected Publications</h2>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>Percolating Corrosion Pathways of Chemically Ordered NiCr Alloys in Molten Salts</h3>
+            <p><strong>Corrosion Science</strong>, 2026 — Shows how chemical ordering can create connected Cr pathways that accelerate molten salt corrosion in Ni–Cr alloys.</p>
+            <a href="https://doi.org/10.1016/j.corsci.2026.113960" target="_blank" rel="noopener">DOI</a>
+          </article>
+          <article class="publication">
+            <h3>Surface Orientation-Dependent Corrosion of NiCr in Molten FLiNaK Salt</h3>
+            <p><strong>ACS Applied Materials & Interfaces</strong>, 2025 — Reveals how surface orientation and electric fields control fluorine coverage and Cr dissolution.</p>
+            <a href="https://doi.org/10.1021/acsami.5c06557" target="_blank" rel="noopener">DOI</a>
+          </article>
+          <article class="publication">
+            <h3>First-Principles Grain Boundary Effects on Fluorine-Induced Initial Corrosion of NiCr</h3>
+            <p><strong>Computational Materials Science</strong>, 2025 — Explains how grain boundaries enhance fluorine adsorption and lower dissolution barriers.</p>
+            <a href="https://doi.org/10.1016/j.commatsci.2025.113903" target="_blank" rel="noopener">DOI</a>
+          </article>
+          <article class="publication">
+            <h3>A Reactive Force Field Approach to Modeling Corrosion of NiCr Alloys in Molten FLiNaK Salts</h3>
+            <p><strong>Applied Surface Science</strong>, 2024 — Develops and applies a ReaxFF framework for atomistic molten salt corrosion simulations.</p>
+            <a href="https://doi.org/10.1016/j.apsusc.2024.159627" target="_blank" rel="noopener">DOI</a>
+          </article>
+        </div>
+      </section>
 
-    <section id="projects" class="section">
-      <p class="eyebrow">Projects</p>
-      <h2>Current and past research directions</h2>
-      <div class="grid cards">
-        <article class="card project">
-          <h3>NiCr–FLiNaK ReaxFF Development</h3>
-          <p>Reactive force-field modeling framework for simulating molten salt corrosion processes at the atomic scale.</p>
-        </article>
-        <article class="card project">
-          <h3>Chemical Ordering in Corrosion</h3>
-          <p>Atomistic simulations connecting Ni₂Cr ordering, Cr percolation, and accelerated alloy degradation in molten salts.</p>
-        </article>
-        <article class="card project">
-          <h3>Kinetic Monte Carlo Dealloying</h3>
-          <p>Mesoscale modeling of selective dissolution, vacancy evolution, ligament formation, and corrosion-front propagation.</p>
-        </article>
-      </div>
-    </section>
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <span class="icon">◈</span>
+          <h2>Projects</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card project">
+            <h3>NiCr–FLiNaK ReaxFF Development</h3>
+            <p>Reactive force-field modeling framework for simulating molten salt corrosion processes at the atomic scale.</p>
+          </article>
+          <article class="card project">
+            <h3>Chemical Ordering in Corrosion</h3>
+            <p>Atomistic simulations connecting Ni₂Cr ordering, Cr percolation, and accelerated alloy degradation in molten salts.</p>
+          </article>
+          <article class="card project">
+            <h3>Kinetic Monte Carlo Dealloying</h3>
+            <p>Mesoscale modeling of selective dissolution, vacancy evolution, ligament formation, and corrosion-front propagation.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="history" class="section highlight">
-      <p class="eyebrow">History & Civilizations</p>
-      <h2>History as another way to study complex systems.</h2>
-      <p>
-        My interest in history centers on ancient Egypt, the Bronze Age, and the rise and collapse of complex societies. I am especially interested in how civilizations respond to environmental stress, technological change, war, governance challenges, and cultural transformation.
-      </p>
-      <div class="essay-list">
-        <article>
-          <h3>What Engineers Can Learn from the Bronze Age Collapse</h3>
-          <p>A future essay on fragility, interdependence, supply chains, and resilience in complex systems.</p>
-        </article>
-        <article>
-          <h3>Ramesses III, the Sea Peoples, and the Defense of Civilization</h3>
-          <p>A future essay on crisis, military organization, memory, and the end of the Late Bronze Age world.</p>
-        </article>
-        <article>
-          <h3>Ancient Egypt and the Engineering of Civilization</h3>
-          <p>A future essay on infrastructure, state organization, agriculture, and the technological foundations of continuity.</p>
-        </article>
-      </div>
-    </section>
+      <section id="history" class="section">
+        <div class="section-heading">
+          <span class="icon">𓂀</span>
+          <h2>History, Civilizations & Complex Systems</h2>
+        </div>
+        <p>
+          My interest in history centers on ancient Egypt, the Bronze Age, and the rise, resilience, and collapse of complex societies. I am especially interested in how civilizations respond to environmental stress, technological change, war, governance challenges, and cultural transformation.
+        </p>
+        <div class="essay-list">
+          <article>
+            <h3>What Engineers Can Learn from the Bronze Age Collapse</h3>
+            <p>A future essay on fragility, interdependence, supply chains, and resilience in complex systems.</p>
+          </article>
+          <article>
+            <h3>Ramesses III, the Sea Peoples, and the Defense of Civilization</h3>
+            <p>A future essay on crisis, military organization, memory, and the end of the Late Bronze Age world.</p>
+          </article>
+          <article>
+            <h3>Ancient Egypt and the Engineering of Civilization</h3>
+            <p>A future essay on infrastructure, state organization, agriculture, and the technological foundations of continuity.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="contact" class="section narrow">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>
-        I am always happy to connect about nuclear research and history.
-      </p>
-      <div class="contact-links">
-        <a href="https://github.com/HamdyArkoub3" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://scholar.google.com/citations?user=6HetfTYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://orcid.org/0000-0002-3512-9491" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://www.linkedin.com/in/hamdyarkoub3/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-      <p class="note">Replace the Scholar, ORCID, and LinkedIn links with your exact profile URLs.</p>
+      <section id="contact" class="section contact-section">
+        <div class="section-heading">
+          <span class="icon">✉</span>
+          <h2>Contact</h2>
+        </div>
+        <p>I am always happy to connect about nuclear research, computational materials, and history.</p>
+        <div class="contact-links">
+          <a href="mailto:hamdy.arkoub@gmail.com">Email</a>
+          <a href="https://github.com/HamdyArkoub3" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=6HetfTYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-3512-9491" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://www.linkedin.com/in/hamdyarkoub3/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
     </section>
   </main>
 
