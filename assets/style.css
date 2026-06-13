@@ -394,3 +394,67 @@ a { color: inherit; }
   .profile-photo-wrap { width: 190px; height: 190px; }
   .footer { padding: 24px 20px 34px; }
 }
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.education-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 32px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(24, 49, 80, 0.95), rgba(13, 43, 69, 0.95));
+  border: 1px solid rgba(104, 156, 205, 0.25);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.school-logo {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.education-content strong {
+  display: block;
+  color: #49a3ff;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.education-content ul {
+  margin: 0 0 14px 0;
+  padding-left: 22px;
+}
+
+.education-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.education-content p {
+  margin: 0;
+  color: #d8e7f5;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    flex-direction: column;
+  }
+}
