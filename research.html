@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research | Hamdy Arkoub</title>
-  <meta name="description" content="Research areas of Hamdy Arkoub in computational nuclear materials, molten salt corrosion, alloy degradation, and multiscale modeling." />
+
+  <title>Research Projects | Hamdy Arkoub</title>
+  <meta name="description" content="Research projects of Hamdy Arkoub in computational nuclear materials, molten salt corrosion, alloy degradation, reactive interfaces, and multiscale modeling." />
 
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -12,6 +13,10 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <link rel="stylesheet" href="assets/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,53 +29,145 @@
       <button class="menu-toggle" aria-label="Open navigation">☰</button>
 
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="history.html">History</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html#about">About</a>
+        <a href="research.html">Research Projects</a>
+        <a href="history.html">History of Egypt</a>
         <a href="Hamdy_Arkoub_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main class="page-main">
-    <section class="section narrow">
-      <div class="section-heading">
-        <span class="icon">⚛</span>
-        <h1>Research</h1>
+  <main class="layout">
+    <aside class="profile-panel">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Hamdy Arkoub" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="photo-fallback">HA</div>
       </div>
 
-      <p class="lead">
-        My research focuses on computational nuclear materials, molten salt corrosion, alloy degradation, and multiscale modeling for advanced nuclear energy systems.
-      </p>
-    </section>
+      <h1>Hamdy<br>Arkoub</h1>
+      <p class="pronouns">Computational Nuclear Materials</p>
+      <h2>Researcher</h2>
 
-    <section class="section">
-      <h2>Research Themes</h2>
-
-      <div class="grid cards">
-        <article class="card">
-          <h3>Molten Salt Corrosion</h3>
-          <p>
-            I study corrosion mechanisms in Ni-based alloys exposed to molten fluoride salts using reactive molecular dynamics and first-principles calculations.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Reactive Interfaces</h3>
-          <p>
-            My work examines fluorine adsorption, chromium dissolution, surface orientation effects, and interfacial reaction pathways in extreme environments.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Multiscale Modeling</h3>
-          <p>
-            I connect DFT, ReaxFF molecular dynamics, kinetic Monte Carlo, and future engineering-scale models to predict materials degradation over longer time and length scales.
-          </p>
-        </article>
+      <div class="social-links" aria-label="Profile links">
+        <a href="https://github.com/HamdyArkoub3" target="_blank" rel="noopener" title="GitHub">GH</a>
+        <a href="https://scholar.google.com/citations?user=6HetfTYAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">GS</a>
+        <a href="https://orcid.org/0000-0002-3512-9491" target="_blank" rel="noopener" title="ORCID">iD</a>
+        <a href="https://www.linkedin.com/in/hamdyarkoub3/" target="_blank" rel="noopener" title="LinkedIn">in</a>
       </div>
+    </aside>
+
+    <section class="content-panel">
+      <section class="section intro-section">
+        <div class="section-heading">
+          <span class="icon">⌬</span>
+          <h2>Research Projects</h2>
+        </div>
+
+        <p class="lead">
+          My research focuses on computational nuclear materials, molten salt corrosion, alloy degradation, reactive interfaces, and multiscale modeling for advanced nuclear energy systems.
+        </p>
+
+        <p>
+          I use atomistic and multiscale modeling tools, including density functional theory, reactive molecular dynamics, and kinetic Monte Carlo methods, to connect atomic-scale mechanisms with long-term materials performance in extreme nuclear environments.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="icon">01</span>
+          <h2>Molten Salt Corrosion</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon">R1</span>
+            <h3>NiCr–FLiNaK ReaxFF Development</h3>
+            <p>
+              Development and application of reactive molecular dynamics models to simulate corrosion reactions between Ni–Cr alloys and molten fluoride salts.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">R2</span>
+            <h3>Surface Orientation Effects</h3>
+            <p>
+              Investigation of how crystallographic surface orientation affects fluorine adsorption, chromium dissolution, and early-stage corrosion pathways.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">R3</span>
+            <h3>Electric Field Effects</h3>
+            <p>
+              Modeling how applied electric fields alter interfacial chemistry, fluorine coverage, and corrosion susceptibility in molten salt environments.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="icon">02</span>
+          <h2>Alloy Degradation & Chemical Ordering</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon">R4</span>
+            <h3>Chemically Ordered NiCr Alloys</h3>
+            <p>
+              Studying how long-range and short-range chemical ordering influence Cr transport, percolating corrosion pathways, and surface degradation.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">R5</span>
+            <h3>Percolating Corrosion Pathways</h3>
+            <p>
+              Understanding how connected chromium-rich pathways can feed selective dissolution and accelerate corrosion-front development.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-icon">R6</span>
+            <h3>Grain Boundary Corrosion</h3>
+            <p>
+              First-principles modeling of fluorine-induced corrosion at grain boundaries and comparison with terrace-like surface sites.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="icon">03</span>
+          <h2>Multiscale Modeling</h2>
+        </div>
+
+        <div class="card-grid three">
+          <article class="card project">
+            <h3>DFT</h3>
+            <p>
+              First-principles calculations to study adsorption, reaction energetics, dissolution barriers, and local bonding at reactive interfaces.
+            </p>
+          </article>
+
+          <article class="card project">
+            <h3>Reactive Molecular Dynamics</h3>
+            <p>
+              Atomistic simulations of dynamic corrosion reactions, interfacial restructuring, and selective Cr dissolution in molten salt environments.
+            </p>
+          </article>
+
+          <article class="card project">
+            <h3>Kinetic Monte Carlo</h3>
+            <p>
+              Mesoscale modeling of dealloying, vacancy evolution, corrosion-front propagation, and longer-time materials degradation.
+            </p>
+          </article>
+        </div>
+      </section>
     </section>
   </main>
 
