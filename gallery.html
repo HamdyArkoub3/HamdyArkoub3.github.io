@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gallery | Hamdy Arkoub</title>
+  <meta name="description" content="Gallery of research, academic milestones, conferences, and historical interests of Hamdy Arkoub." />
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo image-logo" href="index.html" aria-label="Hamdy Arkoub homepage">
+        <img src="assets/nav-icon.png" alt="Hamdy Arkoub logo">
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="research.html">Research Projects</a>
+        <a href="history.html">History of Egypt</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="profile-panel">
+      <div class="profile-photo-wrap">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Hamdy Arkoub" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="photo-fallback">HA</div>
+      </div>
+
+      <h1>Hamdy<br>Arkoub</h1>
+      <p class="pronouns">Computational Nuclear Materials</p>
+      <h2>Researcher</h2>
+
+      <div class="social-links" aria-label="Profile links">
+        <a href="https://github.com/HamdyArkoub3" target="_blank" rel="noopener" title="GitHub">GH</a>
+        <a href="https://scholar.google.com/citations?user=6HetfTYAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar">GS</a>
+        <a href="https://orcid.org/0000-0002-3512-9491" target="_blank" rel="noopener" title="ORCID">iD</a>
+        <a href="https://www.linkedin.com/in/hamdyarkoub3/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      </div>
+    </aside>
+
+    <section class="content-panel">
+      <section class="section intro-section">
+        <div class="section-heading">
+          <span class="icon">▧</span>
+          <h2>Gallery</h2>
+        </div>
+
+        <p class="lead">
+          A collection of research images, academic milestones, conferences, and historical interests.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="icon">◈</span>
+          <h2>Research & Academic Moments</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/gallery/research-1.jpg" alt="Research image">
+            <figcaption>Research image or simulation snapshot.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/conference-1.jpg" alt="Conference photo">
+            <figcaption>Conference or academic event.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/history-1.jpg" alt="History image">
+            <figcaption>History and civilizations.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Hamdy Arkoub.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
