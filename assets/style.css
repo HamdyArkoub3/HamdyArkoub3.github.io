@@ -482,3 +482,44 @@ a { color: inherit; }
     height: 74px;
   }
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(24, 49, 80, 0.92), rgba(13, 43, 69, 0.92));
+  border: 1px solid rgba(104, 156, 205, 0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item figcaption {
+  padding: 16px 18px;
+  color: #d8e7f5;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 260px;
+  }
+}
