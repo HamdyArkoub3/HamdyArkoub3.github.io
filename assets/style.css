@@ -518,10 +518,10 @@ a { color: inherit; }
 
 .gallery-item figcaption ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .gallery-item figcaption li {
-  margin-bottom: 6px;
-  line-height: 1.5;
+  margin-bottom: 2px;
+  line-height: 1.0;
 }
