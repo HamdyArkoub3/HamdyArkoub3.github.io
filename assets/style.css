@@ -825,12 +825,23 @@ a { color: inherit; }
 
 .history-feature.history-vertical .history-image {
   width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 24px;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .history-feature.history-vertical .history-image img {
   width: 100%;
+  height: auto;
   max-height: 420px;
   object-fit: contain;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
 }
 
 .history-feature.history-vertical .history-text {
