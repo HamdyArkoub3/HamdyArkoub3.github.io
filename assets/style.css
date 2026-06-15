@@ -572,3 +572,126 @@ a { color: inherit; }
   font-size: clamp(1.9rem, 3.3vw, 3rem);
   line-height: 1.05;
 }
+
+/* Publication graphical abstract slider */
+
+.section-intro {
+  color: #d8e7f5;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.publication-slider {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.slider-window {
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(104, 156, 205, 0.28);
+  background: rgba(9, 28, 49, 0.72);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.55s ease;
+}
+
+.slide {
+  min-width: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 520px;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+}
+
+.slide-caption {
+  padding: 18px 22px;
+  background: linear-gradient(145deg, rgba(24, 49, 80, 0.96), rgba(13, 43, 69, 0.96));
+  border-top: 1px solid rgba(104, 156, 205, 0.25);
+}
+
+.slide-caption strong {
+  display: block;
+  color: #49a3ff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+}
+
+.slide-caption span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.slider-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(104, 156, 205, 0.35);
+  background: rgba(37, 99, 235, 0.28);
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-grid;
+  place-items: center;
+}
+
+.slider-btn:hover {
+  background: rgba(73, 163, 255, 0.35);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.slider-dots button {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(216, 231, 245, 0.35);
+  cursor: pointer;
+}
+
+.slider-dots button.active {
+  background: #49a3ff;
+}
+
+@media (max-width: 900px) {
+  .publication-slider {
+    grid-template-columns: 1fr;
+  }
+
+  .slider-btn {
+    display: none;
+  }
+
+  .slide img {
+    height: auto;
+    max-height: 520px;
+  }
+}
