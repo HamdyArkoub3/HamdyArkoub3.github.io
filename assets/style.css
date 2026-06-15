@@ -758,3 +758,60 @@ a { color: inherit; }
     max-height: none;
   }
 }
+
+/* History overview section */
+
+.history-feature {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 28px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 26px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(24, 49, 80, 0.92), rgba(13, 43, 69, 0.92));
+  border: 1px solid rgba(104, 156, 205, 0.25);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
+}
+
+.history-text p {
+  color: #d8e7f5;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.history-text .lead {
+  color: #ffffff;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.history-image {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #000000;
+  border: 1px solid rgba(104, 156, 205, 0.22);
+  padding: 14px;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 950px) {
+  .history-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .history-image img {
+    max-height: none;
+  }
+}
