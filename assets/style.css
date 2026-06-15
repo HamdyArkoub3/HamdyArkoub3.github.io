@@ -815,3 +815,24 @@ a { color: inherit; }
     max-height: none;
   }
 }
+
+
+.history-feature.history-vertical {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.history-feature.history-vertical .history-image {
+  width: 100%;
+}
+
+.history-feature.history-vertical .history-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.history-feature.history-vertical .history-text {
+  max-width: 100%;
+}
