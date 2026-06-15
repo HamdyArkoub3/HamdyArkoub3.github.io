@@ -566,3 +566,9 @@ a { color: inherit; }
   margin-right: 6px;
 }
 
+/* Smaller headings for Research Outputs subsections */
+#publications .section-heading h2,
+#presentations .section-heading h2 {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.05;
+}
