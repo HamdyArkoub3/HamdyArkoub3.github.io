@@ -847,3 +847,19 @@ a { color: inherit; }
 .history-feature.history-vertical .history-text {
   max-width: 100%;
 }
+
+.research-title-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.research-title-row .card-icon {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.research-title-row h3 {
+  margin: 0;
+}
