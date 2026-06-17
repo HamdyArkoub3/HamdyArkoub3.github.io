@@ -904,3 +904,34 @@ a { color: inherit; }
   border: 0;
   border-radius: 18px;
 }
+
+.research-feature.research-vertical {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.research-feature.research-vertical .research-text {
+  max-width: 100%;
+}
+
+.research-feature.research-vertical .research-image {
+  width: 100%;
+}
+
+.research-image.wide-image {
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.research-image.wide-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+  border-radius: 22px;
+}
