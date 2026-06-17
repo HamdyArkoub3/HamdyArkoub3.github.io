@@ -863,3 +863,44 @@ a { color: inherit; }
 .research-title-row h3 {
   margin: 0;
 }
+
+.small-heading h3 {
+  margin: 0;
+  font-family: "Source Serif 4", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f4f7fb;
+}
+
+.video-section {
+  margin-top: 36px;
+  padding: 28px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(24, 49, 80, 0.95), rgba(13, 43, 69, 0.95));
+  border: 1px solid rgba(104, 156, 205, 0.25);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.video-section p {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 18px;
+}
