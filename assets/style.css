@@ -974,3 +974,25 @@ a { color: inherit; }
 .research-feature.research-vertical .research-text {
   max-width: 100%;
 }
+
+.history-photo-block {
+  margin: 0;
+  width: 100%;
+}
+
+.history-photo-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  object-fit: contain;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+.history-photo-block figcaption {
+  margin-top: 12px;
+  color: #d8e7f5;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  font-family: "Inter", sans-serif;
+}
