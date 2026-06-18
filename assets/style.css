@@ -935,3 +935,42 @@ a { color: inherit; }
   display: block;
   border-radius: 22px;
 }
+
+.history-points {
+  margin: 18px 0 0 0;
+  padding-left: 22px;
+}
+
+.history-points li {
+  margin-bottom: 16px;
+  line-height: 1.65;
+  color: #e8f1fb;
+}
+
+.image-caption {
+  margin-top: 12px;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: #d8e7f5;
+}
+
+.research-feature.research-vertical {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.research-feature.research-vertical .research-image {
+  width: 100%;
+}
+
+.research-feature.research-vertical .research-image img {
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.research-feature.research-vertical .research-text {
+  max-width: 100%;
+}
