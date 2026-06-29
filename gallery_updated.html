@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gallery | Hamdy Arkoub</title>
+  <meta name="description" content="Gallery of research, academic milestones, conferences, and historical interests of Hamdy Arkoub." />
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    /* Gallery-only page: removes the profile sidebar and gives the gallery the full page width. */
+    .gallery-only-layout {
+      width: min(1320px, calc(100% - 64px));
+      margin: 0 auto;
+      padding: 72px 0 80px;
+    }
+
+    .gallery-panel {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      border: 0;
+    }
+
+    .gallery-hero {
+      margin-bottom: 36px;
+    }
+
+    .gallery-hero .section-heading {
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .gallery-hero .section-heading h2 {
+      font-size: clamp(3.2rem, 6vw, 5.2rem);
+      line-height: 1;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 34px;
+    }
+
+    .gallery-item {
+      position: relative;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(130, 181, 255, 0.24);
+      box-shadow: 0 24px 58px rgba(0, 0, 0, 0.30);
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.025);
+    }
+
+    .gallery-item figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 18px 24px;
+      color: #ffffff;
+      background: linear-gradient(90deg, rgba(8, 36, 82, 0.96), rgba(26, 94, 178, 0.88));
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .gallery-item figcaption ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .gallery-item figcaption li {
+      margin: 0;
+      font-size: clamp(0.95rem, 1.15vw, 1.08rem);
+      line-height: 1.45;
+      font-weight: 600;
+    }
+
+    .gallery-item figcaption strong {
+      color: #dbeafe;
+      font-weight: 800;
+    }
+
+    @media (max-width: 920px) {
+      .gallery-only-layout {
+        width: min(100% - 32px, 760px);
+        padding: 52px 0 64px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .gallery-item img {
+        height: 340px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .gallery-only-layout {
+        width: calc(100% - 24px);
+      }
+
+      .gallery-hero .section-heading {
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+      .gallery-item img {
+        height: 270px;
+      }
+
+      .gallery-item figcaption {
+        position: relative;
+        background: rgba(8, 36, 82, 0.98);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo image-logo" href="index.html" aria-label="Hamdy Arkoub homepage">
+        <img src="assets/nav-icon.png" alt="Hamdy Arkoub logo">
+      </a>
+
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="research.html">Research Projects</a>
+        <a href="outputs.html">Research Outputs</a>
+        <a href="history.html">History of Egypt</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="gallery-only-layout">
+    <section class="content-panel gallery-panel">
+      <section class="section intro-section gallery-hero">
+        <div class="section-heading">
+          <span class="icon">▧</span>
+          <h2>Gallery</h2>
+        </div>
+        
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/gallery/defense.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>June 2026:</strong> Passing my PhD defense in Nuclear Engineering at Penn State University together with my friend, Beihan.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/conference-tms2026.jpg" alt="Conference photo">
+            <figcaption>
+              <ul>
+                <li><strong>March 2026:</strong> Presenting my research at TMS 2026 Annual Meeting & Exhibition at San Diego, California.</li>
+              </ul>
+          </figcaption>
+          </figure>           
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/research-1.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>September 2025:</strong> Receiving Best Poster Award at the 2025 Penn State Nuclear Engineering Grad Day.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/inmm-2025.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>August 2025:</strong> Representing Penn State with the INMM Student Chapter at the INMM 66th Annual Meeting.</li>
+              </ul>
+          </figcaption>
+          </figure>
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/scholarship.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>June 2025:</strong> Featured by my department for receiving the PSU Graduate School Persistence Scholarship Award.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/ebr-i.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>May 2025:</strong> Visiting the birthplace of nuclear power (EBR-1) during my summer internship at INL.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/conference-tms2025.jpg" alt="Academic milestone photo">
+            <figcaption>
+              <ul>
+                <li><strong>March 2025:</strong> Presenting my research at TMS 2025 Annual Meeting & Exhibition at Las Vegas, Nevada.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/grad2024.jpg" alt="History and civilizations photo">
+            <figcaption>
+              <ul>
+                <li><strong>September 2024:</strong> Presenting a rapid talk at the 2024 Penn State Nuclear Engineering Grad Day.</li>
+              </ul>
+          </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/comp.jpg" alt="History and civilizations photo">
+            <figcaption>
+              <ul>
+                <li><strong>July 2024:</strong> Passing my PhD comprehensive examination in Nuclear Engineering at Penn State.</li>
+              </ul>
+          </figcaption>
+          </figure>
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/history-1.jpg" alt="History and civilizations photo">
+            <figcaption>
+              <ul>
+                <li><strong>February 2024:</strong> Visiting the Egyptian Museum in Cairo and the Museum of Islamic Art.</li>
+              </ul>
+          </figcaption>
+          </figure>
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/conference-1.jpg" alt="Conference photo">
+            <figcaption>
+              <ul>
+                <li><strong>October 2023:</strong> Presenting my research at MS&T 2023 Annual Meeting & Exhibition at Columbus, Ohio.</li>
+              </ul>
+          </figcaption>
+          </figure>
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/conference-mst2022.jpg" alt="Conference photo">
+            <figcaption>
+              <ul>
+                <li><strong>October 2022:</strong> Presenting my research at MS&T 2022 Annual Meeting & Exhibition at Pittsburgh, Pennsylvania.</li>
+              </ul>
+          </figcaption>
+          </figure>  
+
+          <figure class="gallery-item">
+            <img src="assets/gallery/alex-2021.jpg" alt="Conference photo">
+            <figcaption>
+              <ul>
+                <li><strong>June 2021:</strong> Graduating first in the Class of 2021 from the Department of Nuclear Engineering at Alexandria University.</li>
+              </ul>
+          </figcaption>
+          </figure>  
+          
+          <figure class="gallery-item">
+            <img src="assets/gallery/kaist.jpg" alt="Conference photo">
+            <figcaption>
+              <ul>
+                <li><strong>August 2020:</strong> Completing NEREC Summer Fellows Program at KAIST, South Korea.</li>
+              </ul>
+          </figcaption>
+          </figure>  
+          
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Hamdy Arkoub.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
