@@ -508,14 +508,6 @@ a { color: inherit; }
   background: rgba(5, 18, 34, 0.7);
 }
 
-.gallery-item figcaption {
-  padding: 18px 22px;
-  color: #d8e7f5;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 .gallery-item figcaption ul {
   margin: 0;
   padding-left: 10px;
@@ -525,6 +517,21 @@ a { color: inherit; }
   margin-bottom: 2px;
   line-height: 1.0;
 }
+
+
+.gallery-item figcaption {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  z-index: 1;
+  padding: 18px 24px;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(8, 36, 82, 0.96), rgba(26, 94, 178, 0.88));
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+}
+
 
 /* Research Outputs page refinements */
 
