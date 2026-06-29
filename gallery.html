@@ -70,18 +70,20 @@
     .gallery-item img {
       display: block;
       width: 100%;
-      height: 430px;
-      object-fit: contain;
-      object-position: center;
-      background: rgba(3, 12, 28, 0.72);
+      height: 420px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
     }
 
     .gallery-item:hover img {
-      transform: none;
+      transform: scale(1.025);
     }
 
     .gallery-item figcaption {
-      position: relative;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
       padding: 18px 24px;
       color: #ffffff;
       background: linear-gradient(90deg, rgba(8, 36, 82, 0.96), rgba(26, 94, 178, 0.88));
@@ -119,7 +121,7 @@
       }
 
       .gallery-item img {
-        height: 360px;
+        height: 340px;
       }
     }
 
@@ -134,10 +136,11 @@
       }
 
       .gallery-item img {
-        height: 300px;
+        height: 270px;
       }
 
       .gallery-item figcaption {
+        position: relative;
         background: rgba(8, 36, 82, 0.98);
       }
     }
