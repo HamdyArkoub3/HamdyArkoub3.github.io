@@ -41,37 +41,54 @@
     }
 
     .section-heading h2,
-    .history-text h3,
-    .small-heading h3 {
+    .research-text h3,
+    .small-heading h3,
+    .research-image h3 {
       color: #0f172a;
     }
 
-    .history-text p,
     .section p,
+    .research-text p,
     .image-caption,
-    .history-photo-block figcaption {
+    .history-photo-block figcaption,
+    .history-points li {
       color: #334155;
     }
 
-    .history-text .lead {
-      color: #0f172a !important;
+    .research-text strong,
+    .history-points strong {
+      color: #0f172a;
     }
 
     .history-feature,
+    .history-feature.history-vertical,
+    .research-feature,
+    .research-feature.research-vertical,
     .video-section {
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid rgba(15, 23, 42, 0.12);
       box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
     }
 
-    .history-image {
+    .history-image,
+    .history-feature.history-vertical .history-image,
+    .research-image,
+    .research-image.wide-image {
       background: rgba(255, 255, 255, 0.96);
       border: 1px solid rgba(15, 23, 42, 0.10);
     }
 
-    .history-points li {
-      color: #334155;
+    .research-image.wide-image {
+      padding: 18px;
     }
+
+    .history-photo-block img,
+    .research-image img,
+    .research-image.wide-image img,
+    .history-feature.history-vertical .history-image img {
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+    }
+
   </style> 
 </head>
 
