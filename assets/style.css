@@ -677,12 +677,12 @@ a { color: inherit; }
   height: 12px;
   border-radius: 999px;
   border: none;
-  background: rgba(216, 231, 245, 0.35);
+  background: #b3bfc9;
   cursor: pointer;
 }
 
 .slider-dots button.active {
-  background: #800101;
+  background: #49a3ff;
 }
 
 @media (max-width: 900px) {
