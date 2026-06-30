@@ -208,6 +208,9 @@ a { color: inherit; }
   line-height: 1;
 }
 
+.eye-icon {
+  font-size: 36px;
+}
 
 .section h2 {
   margin: 0;
