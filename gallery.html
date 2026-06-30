@@ -21,6 +21,37 @@
 
   <style>
     /* Gallery-only page: removes the profile sidebar and gives the gallery the full page width. */
+    body {
+      background:
+        radial-gradient(circle at 16% 12%, rgba(85, 167, 255, 0.20), transparent 30%),
+        radial-gradient(circle at 90% 35%, rgba(14, 165, 164, 0.14), transparent 30%),
+        linear-gradient(135deg, #f8fafc, #eaf1f8);
+      color: #0f172a;
+    }
+
+    .site-header {
+      background: rgba(248, 250, 252, 0.86);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.10);
+    }
+
+    .nav-links a {
+      color: #334155;
+    }
+
+    .nav-links a:hover {
+      color: #0f172a;
+    }
+
+    .gallery-hero .section-heading h2 {
+      color: #0f172a;
+    }
+
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.14);
+    }
+    
     .gallery-only-layout {
       width: min(1320px, calc(100% - 64px));
       margin: 0 auto;
