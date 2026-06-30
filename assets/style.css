@@ -998,13 +998,15 @@ a { color: inherit; }
   font-family: "Inter", sans-serif;
 }
 
-.outputs-only-layout {
+.outputs-only-layout,
+.research-only-layout {
   max-width: 1320px;
   margin: 0 auto;
   padding: 72px 44px 80px;
   min-height: calc(100vh - 77px);
 }
 
-.outputs-only-layout .content-panel {
+.outputs-only-layout .content-panel,
+.research-only-layout .content-panel {
   padding: 0;
 }
