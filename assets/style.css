@@ -357,7 +357,7 @@ a { color: inherit; }
   max-width: 1320px;
   margin: 0 auto;
   padding: 24px 44px 36px;
-  color: var(--muted);
+  color: #102a43;
   border-top: 1px solid var(--line);
 }
 
