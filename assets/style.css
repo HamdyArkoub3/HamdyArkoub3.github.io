@@ -354,9 +354,9 @@ a { color: inherit; }
 }
 
 .footer {
-  max-width: 1520px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 24px 44px 36px 434px;
+  padding: 24px 44px 36px;
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
@@ -996,4 +996,15 @@ a { color: inherit; }
   font-size: 0.95rem;
   line-height: 1.55;
   font-family: "Inter", sans-serif;
+}
+
+.outputs-only-layout {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 72px 44px 80px;
+  min-height: calc(100vh - 77px);
+}
+
+.outputs-only-layout .content-panel {
+  padding: 0;
 }
