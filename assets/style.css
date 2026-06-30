@@ -999,6 +999,7 @@ a { color: inherit; }
 }
 
 .outputs-only-layout,
+.history-only-layout,
 .research-only-layout {
   max-width: 1320px;
   margin: 0 auto;
@@ -1007,6 +1008,7 @@ a { color: inherit; }
 }
 
 .outputs-only-layout .content-panel,
+.history-only-layout .content-panel,
 .research-only-layout .content-panel {
   padding: 0;
 }
