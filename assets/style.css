@@ -1012,3 +1012,10 @@ a { color: inherit; }
 .research-only-layout .content-panel {
   padding: 0;
 }
+
+.outputs-only-layout .section p,
+.history-only-layout .section p,
+.research-only-layout .section p {
+  max-width: none;
+  width: 100%;
+}
